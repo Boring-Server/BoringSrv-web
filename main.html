@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>BoringSRV | Home</title>
+
+</head>
+<body>
+
+    <div class="navbar">
+
+        <div class="nav-button"><a href="/srv-info.html" class="web-link">伺服器資訊</a></div>
+    
+    </div>
+
+    <div class="container">
+        <h1>Boring <span class="golden">Server</span></h1>
+        <div class="server-ip">
+            <h2>⬇︎ 歡迎遊玩本伺服器 ⬇︎</h2>
+            <button class="welcome" onclick="welcome()">Welcome</button>
+        </div>
+    </div>
+
+    <script>
+        function welcome() {
+             const button = document.querySelector('.welcome');
+             button.innerText = "Hi 玩家，希望您能開心遊玩伺服器\n本生存伺服器將開啟您的一段新旅行";
+             utton.style.backgroundColor = "#0189FF";
+             button.style.Color = "#FFFFFF"
+
+         setTimeout(() => {
+             button.innerText = "Welcome";
+             button.style.Color = "#FFFFFF"
+             button.style.backgroundColor = "#007BFF";
+        }, 5500)
+      }
+
+    </script>
+
+    <div class="srv-about">
+        <div class="srv-item">
+            <h2>關於伺服器</h2>
+            <p>Hi ! 我是伺服器<span class="red">創辦者</span><span class="aqua"> <a href="https://youtube.com/@InyTw87" target="_blank" class="yt">InyTw</a></span>
+            <p>此伺服器為 <strong><span class="gold">生存伺服器</span></strong>, 
+                <br>取名為 "<span class="gold">無聊生存伺服器</span>"的原因是因為 
+                <br>那時真的很無聊 想說要不要再創一個生存伺服器
+                <br>然後這伺服器就誕生了
+                <br><h3>對
+                <br>
+                <br>要開心，就是要玩樂。不開心，就是要讓自己開心
+                <br>沒有一件事情 不能讓你開心的
+            </p>
+        </div>
+    </div>
+
+    <footer class="footer-1">
+        <p class="link"><p class="footer-link">連結</p>
+        <p class="discord"><a href="https://discord.gg/vpbt9tSfju" target="_blank" class="footer-dc">Discord</a></p>
+        <p class="youtube"><a href="https://youtube.com/@Boringsrv-tw" target="_blank" class="footer-yt">YouTube</a></p>
+        <p class="docs"><p class="footer-docs">文檔</p>
+        <p class="docs-link"><a href="/docs.html" target="_blank" class="footer-docs-link">DOCS</a></p>
+        <p class="power"><h6 class="footer-power">© 2025 BoringSRV 保留所有權利</h6></p>
+    </footer>
+
+</body>
+</html>
